@@ -143,27 +143,25 @@ $result = $conn->query($sql);
 
 ## Installation et Démarrage
 
-1. Clonez ce dépôt sur votre VM Rocky Linux 8.
-
-2. Assurez-vous que Docker et Docker Compose sont installés :
+1. Assurez-vous que Docker et Docker Compose sont installés :
    ```
    sudo yum install -y docker docker-compose
    sudo systemctl start docker
    sudo systemctl enable docker
    ```
 
-3. Naviguez vers le dossier du projet et lancez les conteneurs :
+2. Naviguez vers le dossier du projet et lancez les conteneurs :
    ```
    cd /chemin/vers/le/projet
    docker-compose up -d
    ```
 
-4. Configurez votre fichier hosts local (sur votre machine, pas la VM) pour pointer vers l'IP de votre VM :
+3. Configurez votre fichier hosts local (sur votre machine, pas la VM) pour pointer vers l'IP de votre VM :
    ```
    <IP_DE_VOTRE_VM> mysite1.lan mysite2.lan
    ```
 
-5. Accédez aux sites via votre navigateur :
+4. Accédez aux sites via votre navigateur :
    - http://mysite1.lan
    - http://mysite2.lan
 
